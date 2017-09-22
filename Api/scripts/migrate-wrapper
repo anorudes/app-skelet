@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+
+root="/root/app/"
+cd $root
+
+npm install -g babel-cli
+
+echo 'Execute db-sync'
+npm run db:sync:$2
+echo 'Execute sequilize migrations'
+node_modules/.bin/sequelize db:migrate --url $1 --env $2
+echo 'Execute data-seeds-scripts'
+npm run db:scripts:$2

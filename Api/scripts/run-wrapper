@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+root="/root/app/"
+
+cd $root
+
+#npm run setup -- init
+#npm run setup -- set server.port $serverPort
+
+exec npm run start:env

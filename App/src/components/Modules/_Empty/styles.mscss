@@ -1,0 +1,4 @@
+@import '../../../components/Root/styles/vars';
+
+.root {
+}

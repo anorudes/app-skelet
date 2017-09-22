@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "mulbabartest",
+    "password": "",
+    "database": "mulbabar",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "mulbabartest",
+    "password": "",
+    "database": "mulbabartest",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "mulbabar",
+    "password": "",
+    "database": "mulbabar",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

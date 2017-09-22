@@ -1,0 +1,31 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+
+  "globals": {
+    "connect": true,
+    "gapi": true,
+    "FB": true,
+    "VK": true,
+    "FBSocial": true,
+    "VKSocial": true,
+    "uploadcare": true,
+    "Packery": true,
+    "__CLIENT__": true,
+    "__DEVELOPMENT__": true,
+    "__PRODUCTION__": true,
+    "__PROJECT__": true,
+    "expect": true,
+    "Modernizr": true
+  },
+
+  "plugins": [
+    "react"
+  ]
+}
