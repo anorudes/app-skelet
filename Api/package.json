@@ -20,7 +20,9 @@
     "start:env": "node bin/start.js",
     "start:test": "NODE_ENV=test forever start bin/start.js",
     "start:prod": "NODE_ENV=production node bin/start.js",
-    "start:debug": "NODE_ENV=development NODE_DEBUG=true concurrently --kill-others \"nodemon --debug --watch src bin/start.js\"  \"node-inspector -p 3020\""
+    "start:debug": "NODE_ENV=development NODE_DEBUG=true concurrently --kill-others \"nodemon --debug --watch src bin/start.js\"  \"node-inspector -p 3020\"",
+    "flow": "flow",
+    "test": "jest"
   },
   "repository": {
     "type": "git"
@@ -37,6 +39,8 @@
     "babel-preset-es2015": "6.24.1",
     "babel-preset-stage-0": "6.24.1",
     "babel-register": "6.24.1",
+    "flow-bin": "^0.57.3",
+    "babel-preset-flow": "^6.23.0",
     "bcryptjs": "2.4.3",
     "bluebird": "3.5.0",
     "body-parser": "1.17.1",
